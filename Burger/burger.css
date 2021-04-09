@@ -10,11 +10,24 @@
 }
 
 .level, .mid-level {
-    width: 60px;
+    width: 65px;
     height: 3px;
     background: black;
     border-radius: 5px;
 }
 
+.click.first {
+    transform-origin: 0%;
+    transform: rotate(45deg);
+}
 
+.click .mid-level {
+    background: transparent;
+    transition: 1s;
+}
+
+.click.last {
+    transform-origin: 0%;
+    transform: rotate(-45deg);
+}
 
